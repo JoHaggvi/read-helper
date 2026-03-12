@@ -1,5 +1,5 @@
 function applyBoldFormatting() {
-  var textElements = document.querySelectorAll("p, li, td, span");
+  var textElements = document.querySelectorAll("p,  td");
 
   for (var i = 0; i < textElements.length; i++) {
     var words = textElements[i].childNodes;
