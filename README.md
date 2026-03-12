@@ -8,4 +8,3 @@ Still under develope
 And second example on lists
 
 ![image](https://github.com/McDuuck/read-helper/assets/122491790/743788b7-6095-4e1f-a725-deb82e0ee0bb)
-"moro"
