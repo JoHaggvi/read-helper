@@ -29,12 +29,13 @@ function applyBoldFormatting() {
   document.querySelectorAll("p, td, h1, h2, h3, li").forEach(processNode);
 }
 
-// Run once on load
 applyBoldFormatting();
 
-// Watch for dynamic content
+// Debounced observer - waits 500ms after changes stop before running
+let debounceTimer;
 const observer = new MutationObserver(() => {
-  applyBoldFormatting();
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(applyBoldFormatting, 500);
 });
 
 observer.observe(document.body, { childList: true, subtree: true });
